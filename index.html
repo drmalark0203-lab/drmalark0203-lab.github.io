@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ytbatch — 个人 YouTube 批量上传工具</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    margin: 0; padding: 48px 20px;
+    font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: #f7f8fa; color: #1f2328;
+  }
+  main { max-width: 680px; margin: 0 auto; background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 40px 44px; }
+  h1 { font-size: 26px; margin: 0 0 6px; letter-spacing: -0.2px; }
+  .sub { color: #6b7280; font-size: 15px; margin: 0 0 28px; }
+  h2 { font-size: 17px; margin: 32px 0 10px; }
+  p, li { color: #374151; }
+  ul { padding-left: 20px; }
+  code { background: #f3f4f6; padding: 1px 5px; border-radius: 4px; font-size: 14px; }
+  a { color: #1a56db; }
+  footer { margin-top: 40px; padding-top: 18px; border-top: 1px solid #eef0f3; color: #6b7280; font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>ytbatch</h1>
+  <p class="sub">个人自用的 YouTube 批量上传工具（本地命令行程序）</p>
+
+  <p><strong>ytbatch</strong> 是一个运行在开发者本人电脑或自有服务器上的命令行程序，用于把本地视频文件批量上传到<strong>本人拥有</strong>的 YouTube 频道。</p>
+
+  <h2>它做什么</h2>
+  <ul>
+    <li>读取本地视频文件及其元数据（标题、描述、标签、封面）</li>
+    <li>通过 YouTube Data API v3 上传到本人频道，并设置可见性与定时发布</li>
+    <li>在本地记录已上传视频，避免重复上传</li>
+  </ul>
+
+  <h2>它不做什么</h2>
+  <ul>
+    <li>不对外提供服务，没有注册功能，没有其他用户</li>
+    <li>不收集、不分析、不转售任何用户数据</li>
+    <li>不读取你 Google 账号中除 YouTube 频道操作权限以外的任何内容</li>
+  </ul>
+
+  <h2>数据与隐私</h2>
+  <p>本程序仅在本地保存 OAuth 令牌和上传记录，具体说明见 <a href="privacy.html">隐私政策</a>。</p>
+
+  <h2>联系方式</h2>
+  <p>如有疑问请联系：<a href="mailto:drmalark020390@gmail.com">drmalark020390@gmail.com</a></p>
+
+  <footer>最后更新：2026 年 11 月 16 日</footer>
+</main>
+</body>
+</html>

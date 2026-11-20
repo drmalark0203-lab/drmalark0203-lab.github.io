@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>隐私政策 — ytbatch</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    margin: 0; padding: 48px 20px;
+    font: 16px/1.75 -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: #f7f8fa; color: #1f2328;
+  }
+  main { max-width: 720px; margin: 0 auto; background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 40px 44px; }
+  h1 { font-size: 26px; margin: 0 0 6px; }
+  .sub { color: #6b7280; font-size: 15px; margin: 0 0 30px; }
+  h2 { font-size: 17px; margin: 30px 0 8px; }
+  p, li { color: #374151; }
+  ul { padding-left: 20px; }
+  code { background: #f3f4f6; padding: 1px 5px; border-radius: 4px; font-size: 14px; }
+  a { color: #1a56db; }
+  footer { margin-top: 40px; padding-top: 18px; border-top: 1px solid #eef0f3; color: #6b7280; font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>隐私政策</h1>
+  <p class="sub">适用于 ytbatch（个人 YouTube 批量上传工具）· 最后更新：2026 年 11 月 16 日</p>
+
+  <p>ytbatch 是一个由个人开发者自用、运行在本地电脑或自有服务器上的命令行程序。本政策说明该程序如何处理数据。</p>
+
+  <h2>1. 我们收集哪些数据</h2>
+  <p>ytbatch <strong>不收集</strong>任何个人数据，也没有服务器端数据库。程序运行过程中产生的数据全部保存在运行它的那台机器上：</p>
+  <ul>
+    <li><code>token.json</code>：Google OAuth 授权令牌，用于代表你本人调用 YouTube Data API</li>
+    <li><code>state/ledger.json</code>：已上传视频的本地记录（文件名、视频 ID、发布时间等）</li>
+    <li>本地日志文件：运行过程中的诊断信息</li>
+  </ul>
+
+  <h2>2. 数据如何被使用</h2>
+  <p>授权令牌仅用于调用 YouTube Data API v3，完成以下操作：</p>
+  <ul>
+    <li>上传你本人选择的视频文件到你本人的频道</li>
+    <li>设置视频的标题、描述、标签、分类、可见性与定时发布时间</li>
+    <li>设置视频封面、把视频加入你本人的播放列表</li>
+  </ul>
+  <p>程序不会读取你的邮件、联系人、日历、云端硬盘或任何与 YouTube 频道无关的数据。</p>
+
+  <h2>3. 数据共享</h2>
+  <p>不共享、不出售、不转让。除 Google 官方 API 端点（<code>googleapis.com</code>）外，程序不会向任何第三方服务器发送数据。</p>
+
+  <h2>4. 数据保留与删除</h2>
+  <ul>
+    <li>所有本地文件由使用者自行保管和删除。</li>
+    <li>删除 <code>token.json</code> 即终止本程序的访问权限。</li>
+    <li>你也可以随时在 <a href="https://myaccount.google.com/permissions">Google 账号权限页</a> 撤销对本应用的授权。</li>
+  </ul>
+
+  <h2>5. 使用的 Google 权限范围</h2>
+  <p>本程序仅请求以下 OAuth 范围：</p>
+  <ul>
+    <li><code>https://www.googleapis.com/auth/youtube</code> —— 管理你本人 YouTube 账号的内容（上传、编辑视频信息、管理播放列表）</li>
+  </ul>
+  <p>该范围用于 <a href="https://developers.google.com/youtube/terms/api-services-terms-of-service">YouTube API 服务条款</a> 所允许的用途。</p>
+
+  <h2>6. 儿童隐私</h2>
+  <p>本程序不面向儿童，也不收集任何人的个人信息。</p>
+
+  <h2>7. 安全</h2>
+  <p>授权令牌以文件形式保存在本机，建议仅限本人账户可读。程序不通过互联网传输令牌。</p>
+
+  <h2>8. 政策变更</h2>
+  <p>如本政策发生变更，更新后的版本将发布在本页面。</p>
+
+  <h2>9. 联系方式</h2>
+  <p>如对本政策有疑问，请联系：<a href="mailto:drmalark020390@gmail.com">drmalark020390@gmail.com</a></p>
+
+  <footer><a href="index.html">← 返回首页</a></footer>
+</main>
+</body>
+</html>
